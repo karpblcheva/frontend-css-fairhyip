@@ -5,7 +5,6 @@ body {
     background-color: RGB(91, 47, 16);
     background-attachment: scroll;
     background-image: url(../images/bg_body.jpg);
-    background-position: 0px 0px;
     background-repeat:repeat;
     color:  RGB(215, 207, 200); 
     font-family: Verdana, Georgia;
@@ -15,36 +14,80 @@ body {
     line-height: normal;
     cursor: default;
        }
-#header .logo {
+.wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.header {
+    height: 160px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    width: 223px;
+    height: 93px;
+    left: 30px;
+    bottom: 0;    
+}
+.mainmenu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    }
+.mainmenu li {
     display: inline-block;
-    margin-right: 20px;
-    vertical-align: middle;
-
+    border-radius: 5px;
+    }
+.menu-item a {
+    display: block;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    color: rgb( 70, 21, 0);
+    text-decoration: none;
+    font-family: Verdana;
+    background-color: rgb( 255, 255, 255 );
+    }
+.menu-item active {
+    background-color: rgb( 232, 197, 145 );
+}
+.lang-list li {
+    display: inline-block;
 }
 .lang-list {
   font-size: 11px;
   font-family: "Verdana";
   color: rgb( 232, 209, 164 );
-  line-height: 4.273;
-  text-align: left;
   position: absolute;
-  left: 121px;
+  left: 20px;
   top: 42px;
-  width: 51px;
-  height: 12px;
-  z-index: 74;
+}
+.lang-list a {
+    color: rgb( 255, 255, 255 );
+}
+.lang-list li:nth-child(n+2)::before {
+    content: "| ";
 }
 .auth {
-  font-size: 11px;
-  font-family: "Verdana";
-  color: rgb( 232, 209, 164 );
-  text-decoration: underline;
-  line-height: 4.273;
-  text-align: left;
-  position: absolute;
-  left: 912px;
-  top: 42px;
-  width: 168px;
-  height: 12px;
-  z-index: 73;
+    position: absolute;
+    right: 20px;
+    top: 42px;
 }
+.auth-link signin a {
+    color: rgb( 232, 209, 164 );
+    }
+.auth-link a {
+    color: rgb( 255, 255, 255 );
+    }
+.auth span:nth-child(n+2)::before {
+    content: "| ";
+}
+.promo {
+    padding-top: 40px;
+    height: 157px;
+}
+
+
