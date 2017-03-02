@@ -52,11 +52,12 @@ body {
 
 .menu-item a {
     display: block;
-    height: 40px;
-    color: rgb( 70, 21, 0);
+    height: 100%;
+    color: #461500;
     text-decoration: none;
-    font-family: Verdana;
-    vertical-align: bottom;
+    font-family: Georgia;
+    font-size: 14px;
+    padding: 13px 28px;
 }
 
 .menu-item.active {
@@ -70,15 +71,17 @@ body {
 }
 
 .lang-list {
-    font-size: 11px;
-    font-family: "Verdana";
-    color: rgb( 232, 209, 164);
     position: absolute;
     left: 20px;
     top: 42px;
 }
 
-.lang-list a {
+.lang-item {
+  font-family: Verdana;
+  color: rgb( 232, 209, 164);
+}
+
+.lang-item a {
     color: rgb( 255, 255, 255);
 }
 
@@ -104,12 +107,18 @@ body {
     content: "| ";
 }
 
-.auth a::first-letter {
-    font-size: 9px;
+.auth a {
+  font-family: Verdana;
+  text-transform: lowercase;
 }
 
 .content {
     padding-top: 40px;
+}
+
+section::before {
+    content: url(../images/bg_about.png);
+    float: left;
 }
 
 .promo {
@@ -117,5 +126,13 @@ body {
      background-image: url(../images/bg_promo.png);
      background-repeat: repeat-x repeat-y;
      border-radius: 10px;
+     font-size: 14px;
+     font-style: italic;
+     color: rgb(205,174,70);
+}
 
+h1 {
+  font-family: Georgia;
+  font-size: 22px;
+  color: #ead4aa;
 }
