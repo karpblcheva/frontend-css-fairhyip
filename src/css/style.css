@@ -5,89 +5,117 @@ body {
     background-color: RGB(91, 47, 16);
     background-attachment: scroll;
     background-image: url(../images/bg_body.jpg);
-    background-repeat:repeat;
-    color:  RGB(215, 207, 200); 
+    background-repeat: repeat;
+    color: RGB(215, 207, 200);
     font-family: Verdana, Georgia;
     font-weight: normal;
     font-style: normal;
     font-size: 11px;
     line-height: normal;
     cursor: default;
-       }
+}
+
 .wrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
 }
+
 .header {
     height: 160px;
     position: relative;
 }
+
 .logo {
     position: absolute;
     width: 223px;
     height: 93px;
     left: 30px;
-    bottom: 0;    
+    bottom: 0;
 }
+
 .mainmenu {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 40px;
-    }
-.mainmenu li {
-    display: inline-block;
+}
+
+.menu-list {
+    background-color: rgb( 255, 255, 255);
     border-radius: 5px;
-    }
+}
+
+.menu-item {
+    display: inline-block;
+}
+
 .menu-item a {
     display: block;
     height: 40px;
-    width: 100px;
-    text-align: center;
     color: rgb( 70, 21, 0);
     text-decoration: none;
     font-family: Verdana;
-    background-color: rgb( 255, 255, 255 );
-    }
-.menu-item active {
-    background-color: rgb( 232, 197, 145 );
+    vertical-align: bottom;
 }
+
+.menu-item.active {
+    background-image: url(../images/bg_menu-item-active.png);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .lang-list li {
     display: inline-block;
 }
+
 .lang-list {
-  font-size: 11px;
-  font-family: "Verdana";
-  color: rgb( 232, 209, 164 );
-  position: absolute;
-  left: 20px;
-  top: 42px;
+    font-size: 11px;
+    font-family: "Verdana";
+    color: rgb( 232, 209, 164);
+    position: absolute;
+    left: 20px;
+    top: 42px;
 }
+
 .lang-list a {
-    color: rgb( 255, 255, 255 );
+    color: rgb( 255, 255, 255);
 }
+
 .lang-list li:nth-child(n+2)::before {
     content: "| ";
 }
+
 .auth {
     position: absolute;
     right: 20px;
     top: 42px;
 }
-.auth-link signin a {
-    color: rgb( 232, 209, 164 );
-    }
+
+.auth-link.signin a {
+    color: rgb( 232, 209, 164);
+}
+
 .auth-link a {
-    color: rgb( 255, 255, 255 );
-    }
+    color: rgb( 255, 255, 255);
+}
+
 .auth span:nth-child(n+2)::before {
     content: "| ";
 }
-.promo {
-    padding-top: 40px;
-    height: 157px;
+
+.auth a::first-letter {
+    font-size: 9px;
 }
 
+.content {
+    padding-top: 40px;
+}
 
+.promo {
+     height: 157px;
+     background-image: url(../images/bg_promo.png);
+     background-repeat: repeat-x repeat-y;
+     border-radius: 10px;
+
+}
