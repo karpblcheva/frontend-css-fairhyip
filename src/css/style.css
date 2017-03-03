@@ -132,6 +132,7 @@ section::before {
      border-radius: 10px;
      font-size: 14px;
      font-style: italic;
+     font-family: Georgia;
      color: rgb(205,174,70);
      padding-top: 24px;
      padding-right: 21px;
