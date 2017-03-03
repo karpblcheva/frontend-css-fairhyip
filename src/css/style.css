@@ -41,26 +41,26 @@ body {
     bottom: 0;
 }
 
-.menu-list {
+.mainmenu .menu-list {
     background-color: rgb( 255, 255, 255);
     border-radius: 5px;
 }
 
-.menu-item {
+.mainmenu .menu-item {
     display: inline-block;
 }
 
-.menu-item a {
+.mainmenu .menu-item a {
     display: block;
     height: 100%;
     color: #461500;
     text-decoration: none;
     font-family: Georgia;
     font-size: 14px;
-    padding: 13px 28px;
+    padding: 11px 28px;
 }
 
-.menu-item.active {
+.mainmenu .menu-item.active {
     background-image: url(../images/bg_menu-item-active.png);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -114,25 +114,90 @@ body {
 
 .content {
     padding-top: 40px;
+    padding-bottom: 66px;
 }
 
 section::before {
     content: url(../images/bg_about.png);
     float: left;
+    margin-left: 57px;
+    margin-right: 44px;
+    margin-top: 7px;
 }
 
 .promo {
-     height: 157px;
+     height: 133px;
      background-image: url(../images/bg_promo.png);
      background-repeat: repeat-x repeat-y;
      border-radius: 10px;
      font-size: 14px;
      font-style: italic;
      color: rgb(205,174,70);
+     padding-top: 24px;
+     padding-right: 21px;
+    line-height: 1.5;
+
 }
 
 h1 {
   font-family: Georgia;
   font-size: 22px;
   color: #ead4aa;
+padding-bottom: 10px;    
 }
+
+.article {
+    padding-top: 42px;
+    padding-left: 35px;
+    padding-right: 20px;
+}
+
+h2 {
+    padding-left: 126px;
+    font-family: Georgia;
+    font-size: 18px;
+    color: rgb(233, 211, 122)
+}
+
+.article img {
+    float: left;
+    margin-right: 30px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+.footer {
+    padding-left: 111px;
+    padding-right: 111px;
+    padding-top: 40px;
+    padding-bottom: 20px;   
+}
+
+.footer div {
+    color: #f9da5a;
+    font-family: Verdana;
+    font-size: 11px; 
+}
+
+.footermenu {
+    float: right;
+    margin-top: -13px;
+}
+
+.footermenu .menu-item {
+    display: inline-block;
+}
+
+.footermenu .menu-item a {
+    text-decoration: none;
+    color: rgb( 255, 255, 255);
+    font-family: Verdana;
+    font-size: 11px; 
+}
+
+.footermenu li:nth-child(n+2)::before {
+    content: "| ";
+}
+
