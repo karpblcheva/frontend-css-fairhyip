@@ -9,6 +9,17 @@ body {
     color: RGB(215, 207, 200);
     font-family: Verdana, Georgia;
     font-weight: normal;
+    font-style: normalbody {
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    background-color: RGB(91, 47, 16);
+    background-attachment: scroll;
+    background-image: url(../images/bg_body.jpg);
+    background-repeat: repeat;
+    color: RGB(215, 207, 200);
+    font-family: Verdana, Georgia;
+    font-weight: normal;
     font-style: normal;
     font-size: 11px;
     line-height: normal;
@@ -62,8 +73,204 @@ body {
 
 .mainmenu .menu-item.active {
     background-image: url(../images/bg_menu-item-active.png);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+}
+
+.lang-list li {
+    display: inline-block;
+}
+
+.lang-list {
+    position: absolute;
+    left: 20px;
+    top: 42px;
+}
+
+.lang-item {
+    font-family: Verdana;
+    color: rgb( 232, 209, 164);
+}
+
+.lang-item a {
+    color: rgb( 255, 255, 255);
+}
+
+.lang-list li:nth-child(n+2)::before {
+    content: "| ";
+}
+
+.auth {
+    position: absolute;
+    right: 20px;
+    top: 42px;
+}
+
+.auth-link.signin a {
+    color: rgb( 232, 209, 164);
+}
+
+.auth-link a {
+    color: rgb( 255, 255, 255);
+}
+
+.auth span:nth-child(n+2)::before {
+    content: "| ";
+}
+
+.auth a {
+    font-family: Verdana;
+    text-transform: lowercase;
+}
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 66px;
+}
+
+section::before {
+    content: url(../images/bg_about.png);
+    float: left;
+    margin-left: 57px;
+    margin-right: 44px;
+    margin-top: 7px;
+}
+
+.promo {
+    height: 133px;
+    background-image: url(../images/bg_promo.png);
+    background-repeat: repeat-x repeat-y;
+    border-radius: 10px;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Georgia;
+    color: rgb(205, 174, 70);
+    padding-top: 24px;
+    padding-right: 21px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: 22px;
+    color: #ead4aa;
+    padding-bottom: 10px;
+}
+
+.article {
+    padding-top: 42px;
+    padding-left: 27px;
+    padding-right: 20px;
+}
+
+h2 {
+    padding-left: 118px;
+    font-family: Georgia;
+    font-size: 18px;
+    color: rgb(233, 211, 122)
+}
+
+.article img {
+    float: left;
+    margin-right: 22px;
+    width: 95px;
+    height: auto;
+}
+
+p {
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.footer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 76px;
+    border-top: 1px solid rgba(215, 182, 73, 0.44);
+}
+
+.footer div {
+    color: #f9da5a;
+    font-family: Verdana;
+    font-size: 11px;
+    position: relative;
+    left: 10px;
+    top: 42px;
+}
+
+.footermenu {
+    float: right;
+    margin-top: -13px;
+    position: relative;
+    right: 10px;
+    top: 42px;
+}
+
+.footermenu .menu-item {
+    display: inline-block;
+}
+
+.footermenu .menu-item a {
+    text-decoration: none;
+    color: rgb( 255, 255, 255);
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+.footermenu li:nth-child(n+2)::before {
+    content: "| ";
+};
+    font-size: 11px;
+    line-height: normal;
+    cursor: default;
+}
+
+.wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.header {
+    height: 160px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 223px;
+    height: 93px;
+    left: 30px;
+    bottom: 0;
+}
+
+.mainmenu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mainmenu .menu-list {
+    background-color: rgb( 255, 255, 255);
+    border-radius: 5px;
+}
+
+.mainmenu .menu-item {
+    display: inline-block;
+}
+
+.mainmenu .menu-item a {
+    display: block;
+    height: 100%;
+    color: #461500;
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 14px;
+    padding: 11px 28px;
+}
+
+.mainmenu .menu-item.active {
+    background-image: url(../images/bg_menu-item-active.png);
 }
 
 .lang-list li {
@@ -144,7 +351,7 @@ h1 {
   font-family: Georgia;
   font-size: 22px;
   color: #ead4aa;
-padding-bottom: 10px;    
+padding-bottom: 10px;
 }
 
 .article {
@@ -173,21 +380,28 @@ p {
 }
 
 .footer {
-    padding-left: 111px;
-    padding-right: 111px;
-    padding-top: 40px;
-    padding-bottom: 20px;   
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 76px;
+    border-top: 1px solid rgba(215, 182, 73, 0.44);
 }
 
 .footer div {
     color: #f9da5a;
     font-family: Verdana;
-    font-size: 11px; 
+    font-size: 11px;
+    position: relative;
+    left: 10px;
+    top: 42px;
 }
 
 .footermenu {
     float: right;
     margin-top: -13px;
+    position: relative;
+    right: 10px;
+    top: 42px;
 }
 
 .footermenu .menu-item {
@@ -198,10 +412,9 @@ p {
     text-decoration: none;
     color: rgb( 255, 255, 255);
     font-family: Verdana;
-    font-size: 11px; 
+    font-size: 11px;
 }
 
 .footermenu li:nth-child(n+2)::before {
     content: "| ";
 }
-
